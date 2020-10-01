@@ -36,11 +36,13 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\SimpleLedTestHarness\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleLed, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\..\..\SimpleLedTestHarness\packages\SimpleLed.1.0.3\lib\net472\SimpleLed.dll</HintPath>
+    <Reference Include="SimpleLed, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SimpleLed.1.0.8\lib\net472\SimpleLed.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,12 +51,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DummyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DummyForm.Designer.cs">
+      <DependentUpon>DummyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Driver.Corsair\Driver.Corsair\Driver.Corsair.csproj">
+      <Project>{ED307659-03AE-4B53-9580-7491F2C331DC}</Project>
+      <Name>Driver.Corsair</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Driver.HyperXAlloy.RGB\Driver.HyperXAlloy.RGB\Driver.HyperXAlloy.RGB.csproj">
+      <Project>{FF7C43DD-E460-4F07-8B2A-7DA9E356B736}</Project>
+      <Name>Driver.HyperXAlloy.RGB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Driver.PhillipsHue\Driver.PhillipsHue\Driver.PhillipsHue.csproj">
+      <Project>{6260b4d2-caa5-4934-ad5f-f0a8a6622ac2}</Project>
+      <Name>Driver.PhillipsHue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Source.gridripple\Source.gridripple\Source.gridripple.csproj">
+      <Project>{C5E77E51-6585-423F-8995-B308E690C59A}</Project>
+      <Name>Source.gridripple</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Source.SimpleCycle\Source.SimpleCycle\Source.SimpleCycle.csproj">
+      <Project>{A7545CBF-E39B-43AF-87DF-8EACA7BCB4B7}</Project>
+      <Name>Source.SimpleCycle</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
