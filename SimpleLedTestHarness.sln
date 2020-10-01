@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Drivers", "Drivers", "{A523
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface", "Interface", "{BA03B213-2BAB-408E-AA5D-BB90042EADBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Source.RainbowWave", "..\Source.RainbowWave\Source.RainbowWave\Source.RainbowWave.csproj", "{D6D11334-A331-4E5D-81CF-4AD21AF2AC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver.Razer", "..\Driver.Razer\Driver.Razer\Driver.Razer.csproj", "{DF1418B6-3A51-4F3B-8E85-8955E33646D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,9 +23,21 @@ Global
 		{28283822-1D5E-4B3F-89DD-97E19AD32216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28283822-1D5E-4B3F-89DD-97E19AD32216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28283822-1D5E-4B3F-89DD-97E19AD32216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D11334-A331-4E5D-81CF-4AD21AF2AC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D11334-A331-4E5D-81CF-4AD21AF2AC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D11334-A331-4E5D-81CF-4AD21AF2AC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D11334-A331-4E5D-81CF-4AD21AF2AC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6D11334-A331-4E5D-81CF-4AD21AF2AC72} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B819B1C3-1DA8-416B-8623-478DCF243EED}
