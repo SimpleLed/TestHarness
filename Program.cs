@@ -5,6 +5,10 @@ using System.Linq;
 using System.Threading;
 //you can either use nuget to get simple led or add the project to this solution. Solution will be in GIT as nuget.
 using SimpleLed;
+using Driver.Asus;
+using Driver.Corsair;
+using Driver.Razer;
+using Source.RainbowWave;
 
 namespace MadLedSDK
 {
@@ -24,7 +28,10 @@ namespace MadLedSDK
             //Add drivers manually like the example below.
             //you wll need to add the driver csproj too.
             //you will need to add at LEAST two - one for source, one for dest
-            //ledManager.Drivers.Add(new DriverHyperXAlloyRGB());
+            //ledManager.Drivers.Add(new AsusDriver());
+            //ledManager.Drivers.Add(new CUEDriver());
+            ledManager.Drivers.Add(new RazerDriver());
+            ledManager.Drivers.Add(new RainbowWaveDriver());
             ledManager.Init();
             Console.WriteLine("Getting devices");
             List<ControlDevice> devices = ledManager.GetDevices();
@@ -81,7 +88,14 @@ namespace MadLedSDK
                 }
                 else
                 {
-                    cycleFan = driv[int.Parse(derp)];
+                    try
+                    {
+                        cycleFan = driv[int.Parse(derp)];
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
                 }
 
             }
