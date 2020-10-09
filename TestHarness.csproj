@@ -36,8 +36,8 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\SimpleLedTestHarness\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="SimpleLed, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\SimpleLed.1.0.16\lib\net472\SimpleLed.dll</HintPath>
+    <Reference Include="SimpleLed, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\SimpleLedTestHarness\packages\SimpleLed.1.0.3\lib\net472\SimpleLed.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,24 +55,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Driver.Asus\Driver.Asus\Driver.Asus.csproj">
-      <Project>{b5992efe-e347-4305-b6ce-4517d6646d32}</Project>
-      <Name>Driver.Asus</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Driver.Corsair\Driver.Corsair\Driver.Corsair.csproj">
-      <Project>{ed307659-03ae-4b53-9580-7491f2c331dc}</Project>
-      <Name>Driver.Corsair</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Driver.Razer\Driver.Razer\Driver.Razer.csproj">
-      <Project>{df1418b6-3a51-4f3b-8e85-8955e33646d0}</Project>
-      <Name>Driver.Razer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Source.RainbowWave\Source.RainbowWave\Source.RainbowWave.csproj">
-      <Project>{d6d11334-a331-4e5d-81cf-4ad21af2ac72}</Project>
-      <Name>Source.RainbowWave</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
