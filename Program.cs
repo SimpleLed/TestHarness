@@ -7,10 +7,13 @@ using System.Threading;
 using Driver.Corsair;
 using Driver.HyperXAlloy.RGB;
 using Driver.PhillipsHue;
+using Driver.Razer;
+using GameIntegration.Destiny2PC;
 //you can either use nuget to get simple led or add the project to this solution. Solution will be in GIT as nuget.
 using SimpleLed;
 using Source.gridripple;
 using Source.SimpleCycle;
+using SteelSeriesSLSProvider;
 
 namespace MadLedSDK
 {
@@ -34,12 +37,15 @@ namespace MadLedSDK
             //Add drivers manually like the example below.
             //you wll need to add the driver csproj too.
             //you will need to add at LEAST two - one for source, one for dest
+            //ledManager.Drivers.Add(new CUEDriver());
+            ledManager.Drivers.Add(new RazerDriver());
+            ledManager.Drivers.Add(new SteelSeriesDriver());
+           // ledManager.Drivers.Add(new DriverHyperXAlloyRGB());
             ledManager.Drivers.Add(new GridRipple());
-            ledManager.Drivers.Add(new DriverHyperXAlloyRGB());
-            ledManager.Drivers.Add(new PhillipsHue());
+            //ledManager.Drivers.Add(new Destiny2());
             ledManager.Drivers.Add(new SimpleRGBCycleDriver());
             ledManager.RescanRequired += LedManager_RescanRequired;
-            //ledManager.Drivers.Add(new CUEDriver());
+            
             ledManager.Init();
             Console.WriteLine("Getting devices");
             List<ControlDevice> devices = ledManager.GetDevices();

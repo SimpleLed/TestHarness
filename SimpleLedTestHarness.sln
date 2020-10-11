@@ -27,6 +27,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q42.HueApi.Streaming", "..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Q42.HueApi.ColorConverters", "..\Driver.PhillipsHue\Driver.PhillipsHue\Libs\Q42.HueApi.ColorConverters\Q42.HueApi.ColorConverters.csproj", "{F03C29FB-32D4-4185-8DF0-205B9B8E0F19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameIntegration.Destiny2", "..\GameIntegration.Destiny2PC\GameIntegration.Destiny2\GameIntegration.Destiny2.csproj", "{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteelSeriesSLSProvider", "..\Driver.SteelSeries\SteelSeriesSLSProvider.csproj", "{068617AD-A8E7-40CC-91F4-9235E348C729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver.Razer", "..\Driver.Razer\Driver.Razer\Driver.Razer.csproj", "{DF1418B6-3A51-4F3B-8E85-8955E33646D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +79,18 @@ Global
 		{F03C29FB-32D4-4185-8DF0-205B9B8E0F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F03C29FB-32D4-4185-8DF0-205B9B8E0F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F03C29FB-32D4-4185-8DF0-205B9B8E0F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068617AD-A8E7-40CC-91F4-9235E348C729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068617AD-A8E7-40CC-91F4-9235E348C729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068617AD-A8E7-40CC-91F4-9235E348C729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068617AD-A8E7-40CC-91F4-9235E348C729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +105,9 @@ Global
 		{E6163E45-E19A-4B83-A31D-D1C4A8738F1F} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
 		{B8A2BC0A-CBC6-4E07-9349-38D4B5E1A05E} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
 		{F03C29FB-32D4-4185-8DF0-205B9B8E0F19} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
+		{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
+		{068617AD-A8E7-40CC-91F4-9235E348C729} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
+		{DF1418B6-3A51-4F3B-8E85-8955E33646D0} = {A5236501-6D4B-459C-B373-64D55F08DDD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B819B1C3-1DA8-416B-8623-478DCF243EED}
