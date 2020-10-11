@@ -40,7 +40,7 @@ namespace MadLedSDK
             //ledManager.Drivers.Add(new CUEDriver());
             ledManager.Drivers.Add(new RazerDriver());
             ledManager.Drivers.Add(new SteelSeriesDriver());
-           // ledManager.Drivers.Add(new DriverHyperXAlloyRGB());
+            ledManager.Drivers.Add(new DriverHyperXAlloyRGB());
             ledManager.Drivers.Add(new GridRipple());
             //ledManager.Drivers.Add(new Destiny2());
             ledManager.Drivers.Add(new SimpleRGBCycleDriver());
