@@ -36,6 +36,9 @@
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\..\..\SimpleLedTestHarness\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="SimpleLed, Version=1.0.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\SimpleLed.1.1.8\lib\net472\SimpleLed.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -63,40 +66,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Driver.Corsair\Driver.Corsair\Driver.Corsair.csproj">
-      <Project>{ED307659-03AE-4B53-9580-7491F2C331DC}</Project>
+      <Project>{ed307659-03ae-4b53-9580-7491f2c331dc}</Project>
       <Name>Driver.Corsair</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Driver.HyperXAlloy.RGB\Driver.HyperXAlloy.RGB\Driver.HyperXAlloy.RGB.csproj">
-      <Project>{FF7C43DD-E460-4F07-8B2A-7DA9E356B736}</Project>
-      <Name>Driver.HyperXAlloy.RGB</Name>
+    <ProjectReference Include="..\Driver.RGBNET\Driver.RGBnet\Driver.RGBnet.csproj">
+      <Project>{1910a003-0f1d-4cca-8ce1-1a626c5ab459}</Project>
+      <Name>Driver.RGBnet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Driver.PhillipsHue\Driver.PhillipsHue\Driver.PhillipsHue.csproj">
-      <Project>{6260b4d2-caa5-4934-ad5f-f0a8a6622ac2}</Project>
-      <Name>Driver.PhillipsHue</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Driver.Razer\Driver.Razer\Driver.Razer.csproj">
-      <Project>{DF1418B6-3A51-4F3B-8E85-8955E33646D0}</Project>
-      <Name>Driver.Razer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Driver.SteelSeries\SteelSeriesSLSProvider.csproj">
-      <Project>{068617AD-A8E7-40CC-91F4-9235E348C729}</Project>
-      <Name>SteelSeriesSLSProvider</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GameIntegration.Destiny2PC\GameIntegration.Destiny2\GameIntegration.Destiny2.csproj">
-      <Project>{D9100DAC-3DCA-4F3E-AE94-EAF8D99837DC}</Project>
-      <Name>GameIntegration.Destiny2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interface\SimpleLed\SimpleLed.csproj">
-      <Project>{eb4729f4-0bf6-41d3-9548-f8c7846a2025}</Project>
-      <Name>SimpleLed</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Source.gridripple\Source.gridripple\Source.gridripple.csproj">
-      <Project>{C5E77E51-6585-423F-8995-B308E690C59A}</Project>
-      <Name>Source.gridripple</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Source.SimpleCycle\Source.SimpleCycle\Source.SimpleCycle.csproj">
-      <Project>{A7545CBF-E39B-43AF-87DF-8EACA7BCB4B7}</Project>
-      <Name>Source.SimpleCycle</Name>
+    <ProjectReference Include="..\Source.RainbowWave\Source.RainbowWave\Source.RainbowWave.csproj">
+      <Project>{d6d11334-a331-4e5d-81cf-4ad21af2ac72}</Project>
+      <Name>Source.RainbowWave</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
